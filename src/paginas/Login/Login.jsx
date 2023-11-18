@@ -30,7 +30,7 @@ const Login = () => {
 
     try {
       const res = await fetch(
-        "http://localhost:4000/api/usuarios/login",
+        `${import.meta.env.VITE_BACKEND_URL}/api/usuarios/login`,
         options
       );
       const data = await res.json();

@@ -24,7 +24,7 @@ const AuthProvider = ({ children }) => {
 
       try {
         const res = await fetch(
-          "http://localhost:4000/api/usuarios/perfil",
+          `${import.meta.env.VITE_BACKEND_URL}/api/usuarios/perfil`,
           options
         );
         const data = await res.json();

@@ -26,7 +26,7 @@ const Register = () => {
 
     try {
       const res = await fetch(
-        "http://localhost:4000/api/usuarios/create",
+        `${import.meta.env.VITE_BACKEND_URL}/api/usuarios/create`,
         options
       );
       const data = await res.json();
